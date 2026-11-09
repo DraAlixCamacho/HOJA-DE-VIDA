@@ -19,220 +19,47 @@
       --text-muted: #a3a3a3;
       --border: rgba(212, 175, 55, 0.2);
     }
-    
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
     body {
       background-color: var(--bg-dark);
-      background-image: radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05), transparent 25%),
-                        radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.05), transparent 25%);
+      background-image: radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05), transparent 25%), radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.05), transparent 25%);
       color: var(--text-main);
       font-family: 'Montserrat', sans-serif;
       line-height: 1.6;
       font-size: 14px;
     }
-
     a { color: var(--gold-light); text-decoration: none; transition: color 0.3s ease; }
     a:hover { color: var(--gold); }
-
-    .cv-container {
-      max-width: 1000px;
-      margin: 40px auto;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 30px;
-      padding: 0 20px;
-    }
-
-    /* COLUMNA IZQUIERDA (Perfil y Contacto) */
-    .sidebar {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 40px 30px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      height: fit-content;
-      position: sticky;
-      top: 40px;
-    }
-
-    .profile-img-container {
-      width: 160px;
-      height: 160px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
-      padding: 4px;
-      background: linear-gradient(135deg, var(--gold-light), var(--gold));
-    }
-
-    .profile-img-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--bg-dark);
-    }
-
-    .name-title {
-      text-align: center;
-      margin-bottom: 30px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 20px;
-    }
-
-    .name-title h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 22px;
-      color: var(--gold);
-      margin-bottom: 5px;
-      letter-spacing: 1px;
-    }
-
-    .name-title h2 {
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
+    .cv-container { max-width: 1000px; margin: 40px auto; display: grid; grid-template-columns: 320px 1fr; gap: 30px; padding: 0 20px; }
+    .sidebar { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 16px; padding: 40px 30px; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); height: fit-content; position: sticky; top: 40px; }
+    .profile-img-container { width: 160px; height: 160px; margin: 0 auto 20px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, var(--gold-light), var(--gold)); }
+    .profile-img-container img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 4px solid var(--bg-dark); }
+    .name-title { text-align: center; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+    .name-title h1 { font-family: 'Cinzel', serif; font-size: 22px; color: var(--gold); margin-bottom: 5px; letter-spacing: 1px; }
+    .name-title h2 { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; }
     .sidebar-section { margin-bottom: 30px; }
-    
-    .sidebar-title {
-      font-family: 'Cinzel', serif;
-      font-size: 14px;
-      color: var(--gold-light);
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
+    .sidebar-title { font-family: 'Cinzel', serif; font-size: 14px; color: var(--gold-light); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
     .contact-list { list-style: none; }
-    .contact-list li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-      font-size: 12px;
-      color: var(--text-muted);
-      word-break: break-word;
-    }
+    .contact-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 12px; color: var(--text-muted); word-break: break-word; }
     .contact-list i { color: var(--gold); font-size: 14px; width: 16px; text-align: center; flex-shrink: 0; }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .skills-list span {
-      background: rgba(212, 175, 55, 0.1);
-      border: 1px solid var(--border);
-      color: var(--gold-light);
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 11px;
-    }
-
-    /* COLUMNA DERECHA (Educación, Diplomados y Cursos) */
-    .main-content {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .content-box {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 40px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-
-    .section-header {
-      font-family: 'Cinzel', serif;
-      font-size: 20px;
-      color: var(--gold);
-      margin-bottom: 25px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
+    .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills-list span { background: rgba(212, 175, 55, 0.1); border: 1px solid var(--border); color: var(--gold-light); padding: 5px 12px; border-radius: 20px; font-size: 11px; }
+    .main-content { display: flex; flex-direction: column; gap: 30px; }
+    .content-box { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .section-header { font-family: 'Cinzel', serif; font-size: 20px; color: var(--gold); margin-bottom: 25px; border-bottom: 1px solid var(--border); padding-bottom: 10px; display: flex; align-items: center; gap: 12px; }
     .section-header i { font-size: 18px; }
-
-    .timeline-item {
-      position: relative;
-      padding-left: 25px;
-      margin-bottom: 30px;
-      border-left: 1px solid var(--border);
-    }
-    
+    .timeline-item { position: relative; padding-left: 25px; margin-bottom: 30px; border-left: 1px solid var(--border); }
     .timeline-item:last-child { margin-bottom: 0; }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -5px;
-      top: 5px;
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 10px var(--gold);
-    }
-
-    .item-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text-main);
-      margin-bottom: 2px;
-    }
-
-    .item-subtitle {
-      font-size: 12px;
-      color: var(--gold-light);
-      margin-bottom: 8px;
-      font-family: 'Cinzel', serif;
-      letter-spacing: 0.5px;
-    }
-
-    .item-date {
-      display: inline-block;
-      font-size: 11px;
-      color: var(--text-muted);
-      background: rgba(255,255,255,0.05);
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    .item-desc {
-      font-size: 13px;
-      color: var(--text-muted);
-      text-align: justify;
-    }
-
-    .course-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
-    .course-item {
-      background: rgba(0,0,0,0.3);
-      border: 1px solid var(--border);
-      padding: 15px;
-      border-radius: 8px;
-    }
+    .timeline-item::before { content: ''; position: absolute; left: -5px; top: 5px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px var(--gold); }
+    .item-title { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 2px; }
+    .item-subtitle { font-size: 12px; color: var(--gold-light); margin-bottom: 8px; font-family: 'Cinzel', serif; letter-spacing: 0.5px; }
+    .item-date { display: inline-block; font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; }
+    .item-desc { font-size: 13px; color: var(--text-muted); text-align: justify; }
+    .course-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .course-item { background: rgba(0,0,0,0.3); border: 1px solid var(--border); padding: 15px; border-radius: 8px; }
     .course-item h4 { color: var(--text-main); font-size: 13px; margin-bottom: 4px; }
     .course-item p { color: var(--gold-light); font-size: 11px; margin: 0; }
     .course-item span { color: var(--text-muted); font-size: 10px; }
-
-    /* RESPONSIVE */
     @media (max-width: 900px) {
       .cv-container { grid-template-columns: 1fr; margin: 20px auto; }
       .sidebar { position: static; }
@@ -242,21 +69,15 @@
   </style>
 </head>
 <body>
-
   <div class="cv-container">
-    
-    <!-- COLUMNA LATERAL -->
     <aside class="sidebar">
       <div class="profile-img-container">
-        <!-- Reemplaza "crespa.jpg" con el nombre exacto de tu foto en el repositorio -->
         <img src="crespa.jpg" alt="Dra. Alix Camacho" onerror="this.src='https://via.placeholder.com/160x160/111/d4af37?text=AC'">
       </div>
-      
       <div class="name-title">
         <h1>Dra. Alix Camacho C.</h1>
         <h2>Odontología Integral &amp; Estética</h2>
       </div>
-
       <div class="sidebar-section">
         <h3 class="sidebar-title">Contacto Clínico</h3>
         <ul class="contact-list">
@@ -268,14 +89,12 @@
           <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dra-alix-camacho" target="_blank">Perfil en LinkedIn</a></li>
         </ul>
       </div>
-
       <div class="sidebar-section">
         <h3 class="sidebar-title">Perfil Profesional</h3>
         <p style="font-size: 12px; color: var(--text-muted); text-align: justify;">
           Profesional en Odontología con sólida formación y actualización continua. Especializada en odontología estética, rehabilitación oral y flujos de trabajo digitales CAD/CAM. Enfoque centrado en la evidencia científica, bioseguridad y atención personalizada de alta precisión para la restauración funcional y estética de la sonrisa.
         </p>
       </div>
-
       <div class="sidebar-section">
         <h3 class="sidebar-title">Competencias Clave</h3>
         <div class="skills-list">
@@ -288,48 +107,68 @@
         </div>
       </div>
     </aside>
-
-    <!-- COLUMNA PRINCIPAL -->
     <main class="main-content">
-      
-      <!-- EDUCACIÓN -->
       <section class="content-box">
         <h2 class="section-header"><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
-        
         <div class="timeline-item">
           <h3 class="item-title">Máster Oficial en Epidemiología y Salud Pública (60 ECTS)</h3>
           <div class="item-subtitle">Euroinnova International Online Education / Università Telematica e-Campus</div>
           <div class="item-date">En curso</div>
         </div>
-
         <div class="timeline-item">
           <h3 class="item-title">Profesional en Odontología</h3>
           <div class="item-subtitle">Universidad de Antioquia (UdeA)</div>
           <div class="item-date">Grado: 2006 | Registro Profesional: 5-3044-07</div>
         </div>
       </section>
-
-      <!-- DIPLOMADOS -->
       <section class="content-box">
         <h2 class="section-header"><i class="fa-solid fa-award"></i> Diplomados y Certificaciones</h2>
-        
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomado en Gerencia en Salud Oral</h3>
+          <div class="item-subtitle">Universidad CES</div>
+          <div class="item-date">08 de agosto al 19 de octubre de 2016 | 84 horas | Apostillado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomado en Odontología Estética Avanzada</h3>
+          <div class="item-subtitle">Universidad CES</div>
+          <div class="item-date">05 de septiembre al 07 de noviembre de 2014 | 120 horas | Apostillado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomado en Implantología Aplicada</h3>
+          <div class="item-subtitle">Universidad CES / COODAN</div>
+          <div class="item-date">22 de marzo al 21 de junio de 2013 | 100 horas | Apostillado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomado Avanzado en Rehabilitación Oral Estética: Dental e Implantología</h3>
+          <div class="item-subtitle">Federación Odontológica Colombiana (FOC)</div>
+          <div class="item-date">09 de marzo al 18 de agosto de 2012 | 120 horas | Certificado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomatura en Prótesis Total y Odontología Geriátrica</h3>
+          <div class="item-subtitle">Universidad CES</div>
+          <div class="item-date">17 de abril al 22 de mayo de 2012 | 44 horas | Apostillado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Diplomado de Estética y Biomateriales de Restauración</h3>
+          <div class="item-subtitle">Universidad de Antioquia (U. de A.)</div>
+          <div class="item-date">Finalizado el 05 de diciembre de 2009 | 160 horas | Certificado</div>
+        </div>
+        <div class="timeline-item">
+          <h3 class="item-title">Curso: Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST)</h3>
+        </div>
         <div class="timeline-item">
           <h3 class="item-title">Diplomado en Odontología Integral y Estética</h3>
           <div class="item-subtitle">Universidad CES</div>
           <p class="item-desc">Actualización clínica y perfeccionamiento en técnicas restauradoras estéticas, aplicación de biomateriales de última generación y rehabilitación oral funcional.</p>
         </div>
-
         <div class="timeline-item">
           <h3 class="item-title">Certificación Complementaria de Salud</h3>
           <div class="item-subtitle">SENA (Servicio Nacional de Aprendizaje)</div>
           <p class="item-desc">Formación orientada a normativas de salud, seguridad y protocolos de atención profesional.</p>
         </div>
       </section>
-
-      <!-- ACTUALIZACIÓN (CURSOS Y CONGRESOS) -->
       <section class="content-box">
         <h2 class="section-header"><i class="fa-solid fa-certificate"></i> Cursos y Congresos Actuales</h2>
-        
         <div class="course-grid">
           <div class="course-item">
             <h4>Cirugía Oral y Manejo Farmacológico</h4>
@@ -352,7 +191,6 @@
             <span>2025 | 8 Horas</span>
           </div>
         </div>
-        
         <div style="margin-top: 25px;">
           <h3 style="font-size: 14px; color: var(--gold); margin-bottom: 12px; font-family: 'Cinzel', serif;">Participación en Congresos Recientes</h3>
           <ul style="list-style-position: inside; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
@@ -362,9 +200,7 @@
           </ul>
         </div>
       </section>
-
     </main>
   </div>
-
 </body>
 </html>
