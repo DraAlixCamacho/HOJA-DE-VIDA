@@ -3,204 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV | Dra. Alix Camacho - Odontóloga</title>
-  <meta name="description" content="Curriculum Vitae Profesional de la Dra. Alix Camacho C., Odontóloga Integral y Estética.">
+  <meta name="theme-color" content="#123b3a">
+  <meta name="description" content="Perfil profesional y académico de la Dra. Alix Camacho, odontóloga con 19 años de experiencia clínica y humanitaria en rehabilitación oral, prótesis y estética.">
+  <title>Dra. Alix Camacho | Odontología, Rehabilitación Oral y Estética</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-dark: #030406;
-      --bg-panel: rgba(20, 24, 30, 0.6);
-      --gold: #d4af37;
-      --gold-light: #f9df9f;
-      --text-main: #f0f0f0;
-      --text-muted: #a3a3a3;
-      --border: rgba(212, 175, 55, 0.2);
+      color-scheme: light;
+      --ink: #193332;
+      --muted: #627473;
+      --brand: #17615b;
+      --brand-dark: #123b3a;
+      --accent: #c99b52;
+      --paper: #f7f6f1;
+      --card: #fff;
+      --line: #e4e8e1;
+      --soft: #edf4f0;
+      --shadow: 0 18px 50px rgba(25, 51, 50, .08);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--bg-dark);
-      background-image: radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05), transparent 25%), radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.05), transparent 25%);
-      color: var(--text-main);
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      font-size: 14px;
-    }
-    a { color: var(--gold-light); text-decoration: none; transition: color 0.3s ease; }
-    a:hover { color: var(--gold); }
-    .cv-container { max-width: 1000px; margin: 40px auto; display: grid; grid-template-columns: 320px 1fr; gap: 30px; padding: 0 20px; }
-    .sidebar { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 16px; padding: 40px 30px; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); height: fit-content; position: sticky; top: 40px; }
-    .profile-img-container { width: 160px; height: 160px; margin: 0 auto 20px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, var(--gold-light), var(--gold)); }
-    .profile-img-container img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 4px solid var(--bg-dark); }
-    .name-title { text-align: center; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
-    .name-title h1 { font-family: 'Cinzel', serif; font-size: 22px; color: var(--gold); margin-bottom: 5px; letter-spacing: 1px; }
-    .name-title h2 { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; }
-    .sidebar-section { margin-bottom: 30px; }
-    .sidebar-title { font-family: 'Cinzel', serif; font-size: 14px; color: var(--gold-light); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
-    .contact-list { list-style: none; }
-    .contact-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 12px; color: var(--text-muted); word-break: break-word; }
-    .contact-list i { color: var(--gold); font-size: 14px; width: 16px; text-align: center; flex-shrink: 0; }
-    .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skills-list span { background: rgba(212, 175, 55, 0.1); border: 1px solid var(--border); color: var(--gold-light); padding: 5px 12px; border-radius: 20px; font-size: 11px; }
-    .main-content { display: flex; flex-direction: column; gap: 30px; }
-    .content-box { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .section-header { font-family: 'Cinzel', serif; font-size: 20px; color: var(--gold); margin-bottom: 25px; border-bottom: 1px solid var(--border); padding-bottom: 10px; display: flex; align-items: center; gap: 12px; }
-    .section-header i { font-size: 18px; }
-    .timeline-item { position: relative; padding-left: 25px; margin-bottom: 30px; border-left: 1px solid var(--border); }
-    .timeline-item:last-child { margin-bottom: 0; }
-    .timeline-item::before { content: ''; position: absolute; left: -5px; top: 5px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px var(--gold); }
-    .item-title { font-size: 15px; font-weight: 600; color: var(--text-main); margin-bottom: 2px; }
-    .item-subtitle { font-size: 12px; color: var(--gold-light); margin-bottom: 8px; font-family: 'Cinzel', serif; letter-spacing: 0.5px; }
-    .item-date { display: inline-block; font-size: 11px; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; }
-    .item-desc { font-size: 13px; color: var(--text-muted); text-align: justify; }
-    .course-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .course-item { background: rgba(0,0,0,0.3); border: 1px solid var(--border); padding: 15px; border-radius: 8px; }
-    .course-item h4 { color: var(--text-main); font-size: 13px; margin-bottom: 4px; }
-    .course-item p { color: var(--gold-light); font-size: 11px; margin: 0; }
-    .course-item span { color: var(--text-muted); font-size: 10px; }
-    @media (max-width: 900px) {
-      .cv-container { grid-template-columns: 1fr; margin: 20px auto; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; line-height: 1.7; }
+    a { color: var(--brand); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+    .hero { background: radial-gradient(ellipse at 85% 15%, rgba(201,155,82,.2), transparent 30%), linear-gradient(135deg, #123b3a, #1d5a53); color: #fff; padding: 28px 24px 72px; }
+    .topbar, .hero-inner, .layout, .footer-inner { width: min(1120px, 100%); margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand-mark { color: #f1d9a8; font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600; letter-spacing: .04em; }
+    .topbar nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    .topbar nav a { color: #e1ece7; font-size: 13px; text-decoration: none; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 250px; gap: 50px; align-items: center; padding-top: 60px; }
+    .eyebrow { color: #f1d9a8; font-size: 12px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    h1, h2, h3, h4 { line-height: 1.25; }
+    .hero h1 { margin: 12px 0 8px; font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 58px); font-weight: 600; letter-spacing: -.025em; }
+    .hero-subtitle { margin: 0 0 20px; color: #d7e5df; font-size: 17px; }
+    .hero-copy { max-width: 700px; color: #eaf1ed; font-size: 15px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; border: 1px solid #e1c58e; border-radius: 6px; background: #e1c58e; color: #193332; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .button.secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+    .portrait-wrap { justify-self: center; width: 220px; height: 220px; padding: 7px; border: 1px solid rgba(241,217,168,.8); border-radius: 50%; background: rgba(255,255,255,.08); box-shadow: 0 20px 60px rgba(0,0,0,.2); }
+    .portrait-wrap img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .facts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .fact { border: 1px solid rgba(255,255,255,.22); border-radius: 30px; padding: 7px 12px; color: #f3eee1; font-size: 12px; }
+    .layout { display: grid; grid-template-columns: 285px minmax(0, 1fr); align-items: start; gap: 26px; padding: 34px 24px 70px; }
+    .sidebar, .card { border: 1px solid var(--line); border-radius: 12px; background: var(--card); box-shadow: var(--shadow); }
+    .sidebar { position: sticky; top: 20px; padding: 24px; }
+    .side-section + .side-section { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .side-title { margin: 0 0 12px; color: var(--brand); font-family: 'Playfair Display', serif; font-size: 18px; }
+    .contact-list, .social-list { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .contact-list li, .social-list li { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+    .contact-list strong { display: block; color: var(--ink); font-size: 12px; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 7px; }
+    .skill-list span { padding: 5px 9px; border-radius: 20px; background: var(--soft); color: var(--brand-dark); font-size: 11px; }
+    .main-content { display: grid; gap: 22px; min-width: 0; }
+    .card { padding: 28px; scroll-margin-top: 20px; }
+    .section-heading { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; }
+    .section-heading::before { width: 4px; height: 26px; border-radius: 4px; background: var(--accent); content: ''; }
+    .lead { color: var(--muted); font-size: 14px; }
+    .timeline { display: grid; gap: 18px; }
+    .timeline-item { position: relative; padding: 0 0 0 20px; border-left: 1px solid #cbd9d1; }
+    .timeline-item::before { position: absolute; top: 6px; left: -5px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); content: ''; }
+    .timeline-item h3 { margin: 0 0 4px; font-size: 15px; }
+    .timeline-item .institution { margin: 0; color: var(--brand); font-size: 13px; font-weight: 600; }
+    .meta { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .course-grid, .event-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .course, .event { padding: 15px; border: 1px solid var(--line); border-radius: 8px; background: #fcfcf9; }
+    .course h3, .event h3 { margin: 0 0 6px; font-size: 13px; }
+    .course p, .event p { margin: 0; color: var(--muted); font-size: 12px; }
+    .course .meta, .event .meta { color: var(--brand); font-weight: 600; }
+    .subheading { margin: 25px 0 12px; color: var(--brand-dark); font-family: 'Playfair Display', serif; font-size: 18px; }
+    .footer { padding: 24px; background: var(--brand-dark); color: #d7e5df; text-align: center; font-size: 12px; }
+    .footer a { color: #f1d9a8; }
+    @media (max-width: 820px) {
+      .hero-inner { grid-template-columns: 1fr 180px; gap: 24px; }
+      .portrait-wrap { width: 170px; height: 170px; }
+      .layout { grid-template-columns: 1fr; }
       .sidebar { position: static; }
-      .course-grid { grid-template-columns: 1fr; }
-      .content-box { padding: 25px; }
+      .sidebar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      .side-section + .side-section { margin-top: 0; padding-top: 0; border-top: 0; }
+    }
+    @media (max-width: 560px) {
+      .hero { padding: 20px 18px 48px; }
+      .topbar { align-items: flex-start; }
+      .topbar nav { justify-content: flex-end; gap: 8px 12px; }
+      .topbar nav a { font-size: 11px; }
+      .hero-inner { grid-template-columns: 1fr; padding-top: 38px; }
+      .portrait-wrap { grid-row: 1; width: 145px; height: 145px; }
+      .hero h1 { font-size: 38px; }
+      .layout { padding: 20px 14px 45px; }
+      .card, .sidebar { padding: 21px; }
+      .section-heading { font-size: 21px; }
+      .course-grid, .event-grid, .sidebar-grid { grid-template-columns: 1fr; }
+      .side-section + .side-section { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+    }
+    @media print {
+      body { background: #fff; }
+      .hero { padding: 20px; print-color-adjust: exact; }
+      .hero-inner { padding-top: 20px; }
+      .layout { display: block; padding: 16px 0; }
+      .sidebar { position: static; margin-bottom: 16px; }
+      .card, .sidebar { box-shadow: none; break-inside: avoid; }
+      .topbar nav, .hero-actions { display: none; }
+      a { color: inherit; }
     }
   </style>
 </head>
 <body>
-  <div class="cv-container">
-    <aside class="sidebar">
-      <div class="profile-img-container">
-        <img src="crespa.jpg" alt="Dra. Alix Camacho" onerror="this.src='https://via.placeholder.com/160x160/111/d4af37?text=AC'">
-      </div>
-      <div class="name-title">
+  <header class="hero">
+    <div class="topbar">
+      <a class="brand-mark" href="#inicio" aria-label="Dra. Alix Camacho, inicio">Alix Camacho</a>
+      <nav aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#formacion">Formación</a>
+        <a href="#actualizacion">Actualización</a>
+        <a href="#congresos">Congresos</a>
+      </nav>
+    </div>
+    <div class="hero-inner" id="inicio">
+      <div>
+        <p class="eyebrow">Odontología integral · Rehabilitación oral · Estética</p>
         <h1>Dra. Alix Camacho C.</h1>
-        <h2>Odontología Integral &amp; Estética</h2>
-      </div>
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Contacto Clínico</h3>
-        <ul class="contact-list">
-          <li><i class="fa-solid fa-phone"></i> Sede Sur: +57 310 542 4242</li>
-          <li><i class="fa-solid fa-phone"></i> Sede Norte: +57 314 290 9777</li>
-          <li><i class="fa-solid fa-envelope"></i> dra.alixcamachoc@gmail.com</li>
-          <li><i class="fa-solid fa-globe"></i> <a href="http://www.alixcamachoc.com" target="_blank">www.alixcamachoc.com</a></li>
-          <li><i class="fa-solid fa-laptop-medical"></i> <a href="https://github.com/DraAlixCamacho/Odont-loga-Integral-Est-tica" target="_blank">Página Web Clínica Integral</a></li>
-          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dra-alix-camacho" target="_blank">Perfil en LinkedIn</a></li>
-        </ul>
-      </div>
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Perfil Profesional</h3>
-        <p style="font-size: 12px; color: var(--text-muted); text-align: justify;">
-          Profesional en Odontología con sólida formación y actualización continua. Especializada en odontología estética, rehabilitación oral y flujos de trabajo digitales CAD/CAM. Enfoque centrado en la evidencia científica, bioseguridad y atención personalizada de alta precisión para la restauración funcional y estética de la sonrisa.
-        </p>
-      </div>
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Competencias Clave</h3>
-        <div class="skills-list">
-          <span>Diseño de Sonrisa</span>
-          <span>Rehabilitación Oral</span>
-          <span>Odontología Digital</span>
-          <span>Resinas Estéticas</span>
-          <span>Aclaramiento Dental</span>
-          <span>Manejo de Bruxismo</span>
+        <p class="hero-subtitle">Experiencia clínica con una mirada humana y de salud pública.</p>
+        <p class="hero-copy">Odontóloga con 19 años de experiencia clínica y humanitaria. Integro la práctica en rehabilitación oral, prótesis y estética con la formación en epidemiología y salud pública para brindar una atención cercana, rigurosa y centrada en cada persona.</p>
+        <div class="facts" aria-label="Experiencia y especialidades">
+          <span class="fact">19 años de experiencia</span>
+          <span class="fact">Rehabilitación oral y prótesis</span>
+          <span class="fact">Máster en curso</span>
         </div>
+        <div class="hero-actions">
+          <a class="button" href="mailto:dra.alixcamachoc@gmail.com">Contactar</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/dra-alix-camacho" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img src="crespa.jpg" alt="Retrato de la Dra. Alix Camacho" width="220" height="220">
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Contacto y competencias">
+      <div class="sidebar-grid">
+        <section class="side-section">
+          <h2 class="side-title">Contacto</h2>
+          <ul class="contact-list">
+            <li><strong>Sede Sur</strong><a href="tel:+573105424242">+57 310 542 4242</a></li>
+            <li><strong>Sede Norte</strong><a href="tel:+573142909777">+57 314 290 9777</a></li>
+            <li><strong>Correo</strong><a href="mailto:dra.alixcamachoc@gmail.com">dra.alixcamachoc@gmail.com</a></li>
+            <li><strong>Web oficial</strong><a href="http://www.alixcamachoc.com" target="_blank" rel="noopener noreferrer">alixcamachoc.com</a></li>
+          </ul>
+        </section>
+        <section class="side-section">
+          <h2 class="side-title">Competencias</h2>
+          <div class="skill-list">
+            <span>Rehabilitación oral</span><span>Prótesis</span><span>Estética dental</span>
+            <span>CAD/CAM</span><span>Workflow digital</span><span>Radiología oral y maxilofacial</span>
+            <span>Oclusión funcional</span><span>Epidemiología clínica</span>
+          </div>
+        </section>
+        <section class="side-section">
+          <h2 class="side-title">Enfoque humano</h2>
+          <p class="meta">Empatía, escucha activa, atención humanizada y estrategias para reducir la ansiedad dental, con énfasis en el bienestar integral y la calidad de vida.</p>
+        </section>
+        <section class="side-section">
+          <h2 class="side-title">Presencia digital</h2>
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/dra-alix-camacho" target="_blank" rel="noopener noreferrer">LinkedIn profesional</a></li>
+            <li><a href="https://www.instagram.com/dra.alixcamachc" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook: Doctora Alix Camacho Odontóloga</a></li>
+            <li><a href="https://github.com/DraAlixCamacho/Odont-loga-Integral-Est-tica" target="_blank" rel="noopener noreferrer">Página web Clínica Integral</a></li>
+          </ul>
+        </section>
       </div>
     </aside>
+
     <main class="main-content">
-      <section class="content-box">
-        <h2 class="section-header"><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
-        <div class="timeline-item">
-          <h3 class="item-title">Máster Oficial en Epidemiología y Salud Pública (60 ECTS)</h3>
-          <div class="item-subtitle">Euroinnova International Online Education / Università Telematica e-Campus</div>
-          <div class="item-date">En curso</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Profesional en Odontología</h3>
-          <div class="item-subtitle">Universidad de Antioquia (UdeA)</div>
-          <div class="item-date">Grado: 2006 | Registro Profesional: 5-3044-07</div>
+      <section class="card" id="perfil">
+        <h2 class="section-heading">Perfil profesional y académico</h2>
+        <p class="lead">Odontóloga con 19 años de sólida experiencia clínica y humanitaria, caracterizada por un enfoque transversal que une la excelencia práctica en Rehabilitación Oral, Prótesis y Estética (Universidad de Antioquia) con el rigor metodológico y analítico de la Epidemiología y Salud Pública, actualmente en formación de máster oficial.</p>
+        <p class="lead">Destacada por su vocación de servicio y humanitaria, prioriza la empatía, el bienestar integral y la calidad de vida de cada paciente. Su trayectoria le permite trasladar la práctica clínica a la gestión asistencial y a la evidencia científica. Cuenta con experiencia en docencia, bienestar institucional, normativas de bioseguridad y actualización continua en rehabilitación oral y cirugía bucal.</p>
+      </section>
+
+      <section class="card" id="formacion">
+        <h2 class="section-heading">Formación académica</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Máster Oficial en Epidemiología y Salud Pública (60 ECTS)</h3>
+            <p class="institution">Euroinnova International Online Education / Università Telematica e-Campus</p>
+            <p class="meta">En curso</p>
+          </article>
+          <article class="timeline-item">
+            <h3>Profesional en Odontología</h3>
+            <p class="institution">Universidad de Antioquia (U. de A.)</p>
+            <p class="meta">Grado: 2006 · Registro Profesional: 5-3044-07</p>
+          </article>
         </div>
       </section>
-      <section class="content-box">
-        <h2 class="section-header"><i class="fa-solid fa-award"></i> Diplomados y Certificaciones</h2>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado en Gerencia en Salud Oral</h3>
-          <div class="item-subtitle">Universidad CES</div>
-          <div class="item-date">08 de agosto al 19 de octubre de 2016 | 84 horas | Apostillado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado en Odontología Estética Avanzada</h3>
-          <div class="item-subtitle">Universidad CES</div>
-          <div class="item-date">05 de septiembre al 07 de noviembre de 2014 | 120 horas | Apostillado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado en Implantología Aplicada</h3>
-          <div class="item-subtitle">Universidad CES / COODAN</div>
-          <div class="item-date">22 de marzo al 21 de junio de 2013 | 100 horas | Apostillado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado Avanzado en Rehabilitación Oral Estética: Dental e Implantología</h3>
-          <div class="item-subtitle">Federación Odontológica Colombiana (FOC)</div>
-          <div class="item-date">09 de marzo al 18 de agosto de 2012 | 120 horas | Certificado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomatura en Prótesis Total y Odontología Geriátrica</h3>
-          <div class="item-subtitle">Universidad CES</div>
-          <div class="item-date">17 de abril al 22 de mayo de 2012 | 44 horas | Apostillado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado de Estética y Biomateriales de Restauración</h3>
-          <div class="item-subtitle">Universidad de Antioquia (U. de A.)</div>
-          <div class="item-date">Finalizado el 05 de diciembre de 2009 | 160 horas | Certificado</div>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Curso: Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST)</h3>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Diplomado en Odontología Integral y Estética</h3>
-          <div class="item-subtitle">Universidad CES</div>
-          <p class="item-desc">Actualización clínica y perfeccionamiento en técnicas restauradoras estéticas, aplicación de biomateriales de última generación y rehabilitación oral funcional.</p>
-        </div>
-        <div class="timeline-item">
-          <h3 class="item-title">Certificación Complementaria de Salud</h3>
-          <div class="item-subtitle">SENA (Servicio Nacional de Aprendizaje)</div>
-          <p class="item-desc">Formación orientada a normativas de salud, seguridad y protocolos de atención profesional.</p>
+
+      <section class="card" id="diplomados">
+        <h2 class="section-heading">Diplomados y certificaciones</h2>
+        <div class="timeline">
+          <article class="timeline-item"><h3>Diplomado en Gerencia en Salud Oral</h3><p class="institution">Universidad CES</p><p class="meta">84 horas · 08 de agosto al 19 de octubre de 2016</p></article>
+          <article class="timeline-item"><h3>Diplomado en Odontología Estética Avanzada</h3><p class="institution">Universidad CES</p><p class="meta">120 horas · 05 de septiembre al 07 de noviembre de 2014</p></article>
+          <article class="timeline-item"><h3>Diplomado en Implantología Aplicada</h3><p class="institution">Universidad CES / COODAN</p><p class="meta">100 horas · 22 de marzo al 21 de junio de 2013</p></article>
+          <article class="timeline-item"><h3>Diplomado Avanzado en Rehabilitación Oral Estética: Dental e Implantología</h3><p class="institution">Federación Odontológica Colombiana (FOC)</p><p class="meta">120 horas · 09 de marzo al 18 de agosto de 2012</p></article>
+          <article class="timeline-item"><h3>Diplomatura en Prótesis Total y Odontología Geriátrica</h3><p class="institution">Universidad CES</p><p class="meta">44 horas · 17 de abril al 22 de mayo de 2012</p></article>
+          <article class="timeline-item"><h3>Diplomado de Estética y Biomateriales de Restauración</h3><p class="institution">Universidad de Antioquia</p><p class="meta">160 horas · Finalizado el 05 de diciembre de 2009</p></article>
+          <article class="timeline-item"><h3>Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST)</h3><p class="institution">SENA</p><p class="meta">50 horas · Expedido el 04 de diciembre de 2023</p></article>
         </div>
       </section>
-      <section class="content-box">
-        <h2 class="section-header"><i class="fa-solid fa-certificate"></i> Cursos y Congresos Actuales</h2>
+
+      <section class="card" id="actualizacion">
+        <h2 class="section-heading">Cursos y actualización profesional</h2>
         <div class="course-grid">
-          <div class="course-item">
-            <h4>Cirugía Oral y Manejo Farmacológico</h4>
-            <p>Universidad de Antioquia</p>
-            <span>2026 | 32 Horas</span>
-          </div>
-          <div class="course-item">
-            <h4>Odontología Digital y Robótica</h4>
-            <p>Universidad de Antioquia</p>
-            <span>2025 | 32 Horas</span>
-          </div>
-          <div class="course-item">
-            <h4>Aplicaciones Láser en Odontología</h4>
-            <p>Universidad de Antioquia</p>
-            <span>2025 | 8 Horas</span>
-          </div>
-          <div class="course-item">
-            <h4>Avance Mandibular (Ronquido y Apnea)</h4>
-            <p>Universidad de Antioquia</p>
-            <span>2025 | 8 Horas</span>
-          </div>
+          <article class="course"><h3>Cirugía Oral y Manejo Farmacológico</h3><p>Universidad de Antioquia</p><p class="meta">32 horas · 2026</p></article>
+          <article class="course"><h3>Terapia de Avance Mandibular (DAM)</h3><p>Universidad de Antioquia</p><p class="meta">8 horas · 2025</p></article>
+          <article class="course"><h3>Actualización en Técnicas y Protocolos para Odontología Estética y Rehabilitación Oral</h3><p>Universidad de Antioquia</p><p class="meta">8 horas · 09 de marzo de 2024</p></article>
+          <article class="course"><h3>Ruta Integral de Promoción y Mantenimiento de la Salud en Odontología</h3><p>Universidad de Antioquia</p><p class="meta">16 horas · 13 de septiembre de 2023</p></article>
+          <article class="course"><h3>Actualización en Rehabilitación Oral</h3><p>Universidad de Antioquia</p><p class="meta">32 horas · 12 de mayo de 2022</p></article>
+          <article class="course"><h3>Generalidades, Diagnóstico y Tratamiento Integral de Dolor y Desórdenes Orofaciales</h3><p>Universidad CES</p><p class="meta">4 horas · 03 de mayo de 2021</p></article>
+          <article class="course"><h3>Rehabilitación con Prótesis Removible</h3><p>COODAN</p><p class="meta">6 horas · 14 de mayo de 2011</p></article>
+          <article class="course"><h3>Competencias Digitales en Salud</h3><p>SENA</p><p class="meta">48 horas</p></article>
+          <article class="course"><h3>Inglés Técnico Profesional</h3><p>SENA</p></article>
         </div>
-        <div style="margin-top: 25px;">
-          <h3 style="font-size: 14px; color: var(--gold); margin-bottom: 12px; font-family: 'Cinzel', serif;">Participación en Congresos Recientes</h3>
-          <ul style="list-style-position: inside; color: var(--text-muted); font-size: 13px; line-height: 1.8;">
-            <li><strong style="color: var(--text-main);">III Simposio de Radiología Oral y Maxilofacial</strong> (Cero 70 S.A.S., Medellín - 2026)</li>
-            <li><strong style="color: var(--text-main);">Congreso 85 Años Facultad de Odontología &amp; 55 Simposio Internacional</strong> (UdeA - 2026)</li>
-            <li><strong style="color: var(--text-main);">XXIII Congreso Médico Latinoamericano de Atención Primaria</strong> (IPMA - Medellín)</li>
-          </ul>
+      </section>
+
+      <section class="card" id="congresos">
+        <h2 class="section-heading">Congresos, simposios y actualización internacional</h2>
+        <div class="event-grid">
+          <article class="event"><h3>III Simposio de Radiología Oral y Maxilofacial 2026</h3><p>Cero 70 S.A.S. · Medellín, Colombia</p><p class="meta">29 de julio de 2026 · 8 horas</p></article>
+          <article class="event"><h3>Congreso 85 Años Facultad de Odontología y 55.º Simposio Internacional: “Innovación e Inteligencia Artificial para una Odontología Sostenible”</h3><p>Universidad de Antioquia · Medellín, Colombia</p><p class="meta">23 y 24 de julio de 2026 · 16 horas</p></article>
+          <article class="event"><h3>Congreso Médico Latinoamericano de Atención y Cuidado Primario – IPMA 2026</h3><p>Instituto Profesional de Medicina Avanzada / International University of South Florida · Medellín, Colombia</p><p class="meta">11 y 12 de julio de 2026 · 16 horas</p></article>
+          <article class="event"><h3>IX Congreso de Odontología General y XIII Congreso de Técnicos en Salud Oral: “Una oportunidad para regresar, juntos”</h3><p>CIOA, Alcaldía de Medellín, Universidad CES, U. de A., Universidad Cooperativa de Colombia y ASORAL</p><p class="meta">17 de octubre de 2025 · 8 horas</p></article>
+          <article class="event"><h3>VIII Congreso de Odontología General y XII Congreso de Técnicos en Salud Oral</h3><p>CIOA y entidades aliadas · Conferencia: “Atención de víctimas de violencia sexual”</p><p class="meta">16 de octubre de 2024 · 8 horas</p></article>
+          <article class="event"><h3>Segundo Congreso Magno Internacional 3M Cuidado Oral</h3><p>3M · Modalidad internacional</p><p class="meta">Febrero de 2024 · 8 horas</p></article>
+          <article class="event"><h3>X Simposio Regional de Actualización en Enfermedades Infecciosas “Infectomanía”</h3><p>F.A.I.</p><p class="meta">2023 · 8 horas</p></article>
         </div>
       </section>
     </main>
   </div>
+  <footer class="footer">
+    <div class="footer-inner">Dra. Alix Camacho C. · Odontología Integral y Estética · <a href="http://www.alixcamachoc.com">www.alixcamachoc.com</a></div>
+  </footer>
 </body>
 </html>
